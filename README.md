@@ -37,3 +37,13 @@ cypress run --config-file cypress/configurations/customCypress.json --record --b
 ### 3. Cypress configuring
 
 [Follow these instructions to configure Cypress.](https://docs.cypress.io/guides/references/configuration#Options)
+
+
+How to run:
+накидал структуру реального проекта
+добавил пример пейджобджекта
+скачаешь, запусти npm install в консоли
+потом npm run cy:open
+запустится ui сайпреса, нажмешь ран увилишь как оно бегает
+
+
