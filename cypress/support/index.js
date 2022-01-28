@@ -16,5 +16,14 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
+beforeEach(() => {
+  cy.log('I run before every test in every spec file!!!!!!')
+})
+
+afterEach(() => {
+  cy.log('I run after every test in every spec file!!!!!!')
+})
+
+Cypress.on('uncaught:exception',() => {
+  return false;
+})

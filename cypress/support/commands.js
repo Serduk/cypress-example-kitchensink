@@ -23,3 +23,23 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('setValue', { prevSubject: 'element' }, (subject, text, delay = 150) => {
+  return cy.wrap(subject).clear({ force: true }).type(text, { delay, force: true })
+})
+
+Cypress.Commands.overwrite('visit', (originFn, url, options) => {
+  originFn(url, options)
+  cy.wait(2000)
+})
+
+Cypress.Commands.add('selectFileContent', (filePath, fileInputSelector) => {
+  const fixturePath = filePath.startsWith('cypress/fixtures') ? filePath.split('cypress/fixtures')[1] : filePath
+
+  cy.fixture(fixturePath, null).then((contents) => {
+    cy.get(fileInputSelector).selectFile(
+      { contents, fileName: fixturePath.match(new RegExp('[^\\/]+$')),
+      },
+    )
+  })
+})

@@ -22,7 +22,7 @@
     "e2e": "cypress run",
     "e2e:chrome": "cypress run --browser chrome",
     "e2e:record": "cypress run --record",
-    "e2e:record:chrome": "cypress run --record --browser chrome",
+    "e2e:record:chrome": "cypress run --record --browser  chrome --key 3ebe81e7-7d8a-4917-81ca-6add910a67ba",
     "e2e:record:edge": "cypress run --record --browser edge",
     "e2e:record:firefox": "cypress run --record --browser firefox",
     "e2e:record:parallel": "cypress run --record --parallel",
@@ -50,14 +50,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cypress-io/cypress-example-kitchensink.git"
+    "url": "https://github.com/eshaparenko/cypress-example-kitchensink.git"
   },
-  "author": "Brian Mann",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cypress-io/cypress-example-kitchensink/issues"
-  },
-  "homepage": "https://github.com/cypress-io/cypress-example-kitchensink#readme",
   "dependencies": {
     "npm-run-all": "^4.1.2",
     "serve": "11.3.0"
@@ -66,7 +60,7 @@
     "@bahmutov/print-env": "1.2.0",
     "@cypress/eslint-plugin-dev": "5.0.0",
     "colon-names": "1.0.0",
-    "cypress": "7.3.0",
+    "cypress": "9.3.1",
     "eslint": "7.0.0",
     "eslint-plugin-cypress": "2.8.1",
     "eslint-plugin-json-format": "2.0.1",
@@ -78,7 +72,11 @@
     "semantic-release": "15.13.32",
     "start-server-and-test": "1.10.6",
     "stop-build": "1.1.0",
-    "yaml-lint": "1.2.4"
+    "yaml-lint": "1.2.4",
+    "cypress-tags": "0.3.0",
+    "typescript": "^4.5.5",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1"
   },
   "engines": {
     "node": ">=12"

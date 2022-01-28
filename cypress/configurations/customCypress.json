@@ -1,0 +1,17 @@
+{
+  "baseUrl": "http://localhost:8080",
+  "env": {
+    "email": "testUser",
+    "password": "testPassword",
+    "CYPRESS_INCLUDE_TAGS": "",
+    "CYPRESS_EXCLUDE_TAGS": ""
+  },
+  "pageLoadTimeout": 60000,
+  "videoUploadOnPasses": false,
+  "watchForFileChanges": false,
+  "retries": {
+    "runMode": 0,
+    "openMode": 0
+  },
+  "projectId": "dxvp7e"
+}
